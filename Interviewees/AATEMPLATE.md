@@ -5,5 +5,6 @@ Date and time:
 - PREFERRED COHORT:
 - ONLINE OR IN PERSON:
 - INTERVIEW NUMBER:
+  -Overall score:
 
 # Technical Interview Notes:

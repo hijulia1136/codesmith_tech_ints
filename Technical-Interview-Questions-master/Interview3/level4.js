@@ -6,7 +6,7 @@ Example:
 console.log(anagrams('aabc')); -> [ 'aabc', 'aacb', 'abac', 'abca', 'acab', 'acba', 'baac', 'baca', 'bcaa', 'caab', 'caba', 'cbaa' ]
 */
 
-const anagrams = str => {
+const anagrams = (str) => {
   const strArr = str.split('');
   const result = [];
 
@@ -14,7 +14,7 @@ const anagrams = str => {
     [arr[j], arr[i]] = [arr[i], arr[j]];
   };
 
-  const heaps = index => {
+  const heaps = (index) => {
     if (index === strArr.length) result.push(strArr.join(''));
 
     for (let j = index; j < strArr.length; j += 1) {
@@ -66,7 +66,7 @@ const anagrams = str => {
   ]
 */
 
-const pascalTriangle = numRows => {
+const pascalTriangle = (numRows) => {
   if (numRows < 1) return 0;
   const pascalT = [[1]];
   for (let i = 0; i < numRows - 1; i++) {
@@ -105,12 +105,12 @@ bestProfit([ 100, 88, 44, 2 ]); // 0
 bestProfit([ 100, 88, 99, 300 ]); // 212
 */
 
-const bestProfit = stockPricesYesterday => {
+const bestProfit = (stockPricesYesterday) => {
   if (!Array.isArray(stockPricesYesterday)) return 0;
   let low = Infinity;
   let profit = 0;
 
-  stockPricesYesterday.forEach(price => {
+  stockPricesYesterday.forEach((price) => {
     low = price < low ? price : low;
     profit = price - low > profit ? price - low : profit;
   });

@@ -6,7 +6,7 @@ Create a function "between50And500" that takes a number as an argument.
 For example, if the input is 45 then your function should return false and if the input is 472 it should return true.
 */
 
-const between50And500 = num => num > 50 && num < 500;
+const between50And500 = (num) => num > 50 && num < 500;
 
 /*
 Create a function "divBy100" that takes a number as an argument.
@@ -14,7 +14,7 @@ Create a function "divBy100" that takes a number as an argument.
 For example, if the input is 120 then your function should return false and if the input is 600 it should return true.
 */
 
-const divBy100 = num => num % 100 === 0;
+const divBy100 = (num) => num % 100 === 0;
 
 /*
 Create a function "negativeOrEven" that takes a number as an argument.
@@ -22,7 +22,7 @@ Create a function "negativeOrEven" that takes a number as an argument.
 For example, if the input is 7 then your function should return false and if the input is -3 it should return true.
 */
 
-const negativeOrEven = num => num < 0 || num % 2 === 0;
+const negativeOrEven = (num) => num < 0 || num % 2 === 0;
 
 /*
 Create a function "passAllTests" that takes two arguments, an array of functions as well as a value.
@@ -56,11 +56,11 @@ console.log(
 
 // Create a function "addOne" that takes a number as and argument and returns that number plus one
 
-const addOne = num => num + 1;
-
+const addOne = (num) => num + 1;
+// Create a function "addOne" that takes a number as and argument and returns that number plus one
 // Create a function "subtractOne" that takes a number as and argument and returns that number minus one
 
-const subtractOne = num => num - 1;
+const subtractOne = (num) => num - 1;
 
 /*
 There are two types of potions:
@@ -78,7 +78,7 @@ usePotions("9A123") ➞ "10123"
 usePotions("567") ➞ "567"
 */
 
-const usePotions = value => {
+const usePotions = (value) => {
   let i = 0;
   const result = [];
   while (i < value.length) {
@@ -104,7 +104,7 @@ Define a function "isPalindrome" that takes a string, and returns a boolean valu
 (a palindrome is any string that has the same value when reversed - for example, "LEVEL" or "RACECAR")
 */
 
-const isPalindrome = word => {
+const isPalindrome = (word) => {
   let i = 0;
   let j = word.length - 1;
 

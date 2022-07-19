@@ -29,7 +29,10 @@ Create a function "passAllTests" that takes two arguments, an array of functions
 Each function in your array will return a boolean value. "passAllTests" should pass your value argument to each function.
 If all functions in your array return true then "passAllTests" will return true. Otherwise "passAllTests" should return false
 */
-
+/*
+Use your "passAllTests" function to test if the number 300 is between 50 and 500,
+evenly divisible by 100, and a negative OR even number. Then test the number 250.
+*/
 const passAllTests = (arrOfFuncs, value) => {
   for (let i = 0; i < arrOfFuncs.length; i++) {
     if (!arrOfFuncs[i](value)) return false;

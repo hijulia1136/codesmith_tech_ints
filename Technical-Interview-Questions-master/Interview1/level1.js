@@ -1,6 +1,11 @@
 /* ********************************************* Problem A ******************************************** */
 
 // Declare a variable 'number' and set it to the value 10.
+/*
+Create a function 'addNumbers' that takes a number as an argument. 'addNumbers' should add up all the numbers from 1 to the number you passed to the function.
+For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
+*/
+// Check that your 'addNumbers' function is working correctly by passing your variable 'number' to the 'addNumbers' function
 
 const number = 10;
 
@@ -8,8 +13,9 @@ const number = 10;
 Create a function 'addNumbers' that takes a number as an argument. 'addNumbers' should add up all the numbers from 1 to the number you passed to the function.
 For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
 */
+// Check that your 'addNumbers' function is working correctly by passing your variable 'number' to the 'addNumbers' function
 
-const addNumbers = num => {
+const addNumbers = (num) => {
   let sum = 0;
   for (let i = 1; i <= num; i++) {
     sum += i;
@@ -32,7 +38,7 @@ Create a function 'minAndMax' that takes an array of numbers and returns both th
 NOTE: do not use the native Math.min or Math.max methods. For example minAndMax([7, 68, 2, 19]) should return the array  [2, 68]
 */
 
-const minAndMax = array => {
+const minAndMax = (array) => {
   let min = array[0];
   let max = array[0];
   for (let i = 1; i < array.length; i++) {

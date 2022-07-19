@@ -5,7 +5,30 @@ Create a function "between50And500" that takes a number as an argument.
 "between50And500" should return true if the number passed to it is between 50 and 500 exclusive.
 For example, if the input is 45 then your function should return false and if the input is 472 it should return true.
 */
+/*
+Create a function "divBy100" that takes a number as an argument.
+"divBy100" should return true if the number passed to it is divisible by 100.
+For example, if the input is 120 then your function should return false and if the input is 600 it should return true.
+*/
 
+/*
+Create a function "negativeOrEven" that takes a number as an argument.
+"negativeOrEven" should return true if the number passed to it is a negative number OR it is an even number.
+For example, if the input is 7 then your function should return false and if the input is -3 it should return true.
+*/
+/*
+Create a function "passAllTests" that takes two arguments, an array of functions as well as a value.
+Each function in your array will return a boolean value. "passAllTests" should pass your value argument to each function.
+If all functions in your array return true then "passAllTests" will return true. Otherwise "passAllTests" should return false
+*/
+/*
+Use your "passAllTests" function to test if the number 300 is between 50 and 500,
+evenly divisible by 100, and a negative OR even number. Then test the number 250.
+*/
+/*
+Use your "passAllTests" function to test if the number 300 is between 50 and 500,
+evenly divisible by 100, and a negative OR even number. Then test the number 250.
+*/
 const between50And500 = (num) => num > 50 && num < 500;
 
 /*
@@ -33,6 +56,11 @@ If all functions in your array return true then "passAllTests" will return true.
 Use your "passAllTests" function to test if the number 300 is between 50 and 500,
 evenly divisible by 100, and a negative OR even number. Then test the number 250.
 */
+/*
+Use your "passAllTests" function to test if the number 300 is between 50 and 500,
+evenly divisible by 100, and a negative OR even number. Then test the number 250.
+*/
+
 const passAllTests = (arrOfFuncs, value) => {
   for (let i = 0; i < arrOfFuncs.length; i++) {
     if (!arrOfFuncs[i](value)) return false;

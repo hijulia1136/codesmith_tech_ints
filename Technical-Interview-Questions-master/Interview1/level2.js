@@ -25,10 +25,7 @@ If all functions in your array return true then "passAllTests" will return true.
 Use your "passAllTests" function to test if the number 300 is between 50 and 500,
 evenly divisible by 100, and a negative OR even number. Then test the number 250.
 */
-/*
-Use your "passAllTests" function to test if the number 300 is between 50 and 500,
-evenly divisible by 100, and a negative OR even number. Then test the number 250.
-*/
+
 const between50And500 = (num) => num > 50 && num < 500;
 
 /*

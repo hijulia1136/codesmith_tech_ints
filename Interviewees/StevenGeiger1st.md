@@ -5,7 +5,7 @@ Date and time:
 - PREFERRED COHORT: FTRI
 - ONLINE OR IN PERSON:
 - INTERVIEW NUMBER:1st
-  -Overall score:
+  -Overall score:10/10/10/10
 
 # Technical Interview Notes:
 

@@ -14,31 +14,51 @@ console.log(copyOfTools[0].editor.favorite.mine.name === tools[0].editor.favorit
 */
 
 // Hack Solution (not ideal)
-const deepCopy = object => JSON.parse(JSON.stringify(object));
+const deepCopy = (object) => JSON.parse(JSON.stringify(object));
 
 // Better Solution
-const betterDeepCopy = object => {
+const betterDeepCopy = (object) => {
+  //return the input object if not an object and end function
   if (typeof object !== 'object') return object;
 
+  //create copy variable
   let copy = object;
 
+  //use isArray to check if object is array
+  //if so set copy to an empty array where we will push elements
+  //for of loop to iterate through object
+  //if conditional to check if the type of element is an object and if so push to copy array the result of calling function again passing in the element
+  //otherwise push the element to copy immediately
   if (Array.isArray(object)) {
     copy = [];
     for (const element of object) {
-      if (typeof element === 'object') copy.push(deepCopy(element));
+      if (typeof element === 'object') copy.push(betterDeepCopy(element));
       else copy.push(element);
     }
+
+    //else if the typeof object is an object
+    //create copy as an object
+    //for in loop with key of object
+    //declare new variable value and set it to the object key
+    //if theh type of value is an object set copy at that key to the invoked value of deepcopy passing in value
+    //otherwise set copy at key to the value
   } else if (typeof object === 'object') {
     copy = {};
     for (const key in object) {
       const value = object[key];
-      if (typeof value === 'object') copy[key] = deepCopy(value);
+      if (typeof value === 'object') copy[key] = betterDeepCopy(value);
       else copy[key] = value;
     }
   }
-
+  //return copy
   return copy;
 };
+const tools = [
+  { editor: { favorite: { mine: { name: 'vscode' } } } },
+  { shell: 'zsh' },
+];
+
+console.log(betterDeepCopy(tools));
 
 /* ********************************************* Problem B ********************************************* */
 
@@ -69,19 +89,29 @@ Write a function called 'debounce' that accepts a function and returns a new fun
 Example:
 function giveHi() { return 'hi'; }
 const giveHiSometimes = debounce(giveHi, 3000);
-console.log(giveHiSometimes()); // -> 'hi'
+console.log(giveHiSometimes()); // -> 'hi' ///after 3 miliseconds
 setTimeout(function() { console.log(giveHiSometimes()); }, 2000); // -> undefined
 setTimeout(function() { console.log(giveHiSometimes()); }, 4000); // -> undefined
 setTimeout(function() { console.log(giveHiSometimes()); }, 8000); // -> 'hi'
 */
 
+//declare debounce function with callback and interval passed in
 const debounce = (callback, interval) => {
+  //declare a variable set to a new Date
   let timerStart = new Date();
+  //return with anonymous function
   return () => {
+    //set a time variable also to new date
+    //if that time less than the first time variable results in a timer greater than the interval passed in
+    //then reset the first time variable to a new date and return the callback passed in function
+
     const invocationTime = new Date();
     if (invocationTime - timerStart > interval) {
       timerStart = new Date();
       return callback();
+
+      //otherwise first time variable should be set to the 2nd time variable
+      //returning undefined
     } else {
       timerStart = invocationTime;
       return undefined;

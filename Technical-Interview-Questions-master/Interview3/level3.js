@@ -13,7 +13,7 @@ iRemember(true); -> ['hello', 1, 'world', true]
 
 const memoryMaker = () => {
   const memory = [];
-  return val => {
+  return (val) => {
     memory.push(val);
     return memory;
   };
@@ -35,8 +35,8 @@ const sumAllElements = (arr, acc = 0, index = 0) => {
   return sumAllElements(arr, acc + arr[index], index + 1);
 };
 
-const elements = [1,2,3,4,5]
-console.log(sumAllElements(elements, 10))
+const elements = [1, 2, 3, 4, 5];
+console.log(sumAllElements(elements, 10));
 
 /* ********************************************* Problem C ********************************************* */
 
@@ -59,16 +59,16 @@ cachedSumMultiplyBy2(5, 10); // -> 30 // from the cache object
 */
 
 // Single argument fastCache
-const fastCache = func => {
+const fastCache = (func) => {
   const cache = {};
-  return input => {
+  return (input) => {
     if (!cache.hasOwnProperty(input)) cache[input] = func(input);
     return cache[input];
   };
 };
 
 // Multiple arguments fastCache
-const fastCacheMult = func => {
+const fastCacheMult = (func) => {
   const cache = {};
   return (...args) => {
     const input = JSON.stringify(args);

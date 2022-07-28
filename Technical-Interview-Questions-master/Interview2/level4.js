@@ -73,9 +73,13 @@ subsetSum([8, -2, 1, -3], 6)         -> true (8 + 1 + (-3) = 6)
 */
 
 const subsetSum = (array, target) => {
+  //if the target === 0 return true
   if (target === 0) return true;
+  //if array.length = 0 return false
   if (array.length === 0) return false;
   return (
+    //recursive call call in take it or leave it approach
+    //slice off 1 element passing in array, target - array at element 0
     subsetSum(array.slice(1), target - array[0]) ||
     subsetSum(array.slice(1), target)
   );
@@ -118,3 +122,9 @@ const debounce = (callback, interval) => {
     }
   };
 };
+function giveHi() {
+  return 'hi';
+}
+
+const giveHiSometimes = debounce(giveHi, 3000);
+console.log(giveHiSometimes());

@@ -9,13 +9,16 @@ const addBy10 = add(10)
 addBy10(20) -> 30
 */
 
-const add = val => arg => arg + val;
+const add = (val) => (arg) => arg + val;
 
 /* ********************************************* Problem B ******************************************** */
 
 // Write a function "getLength" that returns the length of a string. Accomplish this without using any loops, native JS methods, or the length property.
 
 const getLength = (string, index = 0) => {
+  //check if the string at the index does not exist and if not return index -base case
+  //recursively call getLength passing in string and incrementing the index
+
   if (!string[index]) return index;
   return getLength(string, ++index);
 };

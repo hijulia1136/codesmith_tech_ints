@@ -14,7 +14,7 @@ oddCounter(2); ->  false
 oddCounter(); -> { true: 1, false: 1 }
 */
 
-const checkerLogger = checkerFn => {
+const checkerLogger = (checkerFn) => {
   const countObj = { true: 0, false: 0 };
   return (...args) => {
     if (args.length) {
@@ -40,11 +40,14 @@ Note: Do not use any native JS methods, or loops.
 */
 
 const countChar = (string, target, count = 0, i = 0) => {
+  //if the string at i does not exist return count
   if (!string[i]) return count;
+  //or if the string at indext is equal to the target increment count
   if (string[i] === target) count++;
+
+  //recursive call passing in string, target, count and i+1
   return countChar(string, target, count, ++i);
 };
-
 
 /* ********************************************* Problem C ********************************************* */
 
@@ -59,7 +62,7 @@ mySafe('wrongPassword') -> "You have entered the wrong password"
 mySafe('myPassword') -> "My Super Secret"
 */
 
-const passwordSafe = (password, safe) => passwordGuess => {
+const passwordSafe = (password, safe) => (passwordGuess) => {
   if (passwordGuess === password) {
     return safe;
   }

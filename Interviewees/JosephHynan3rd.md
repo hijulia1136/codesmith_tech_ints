@@ -5,7 +5,7 @@ Date and time: July 30 8.30AM
 - PREFERRED COHORT: FTRI
 - ONLINE OR IN PERSON:
 - INTERVIEW NUMBER: 3rd
-  -Overall score:
+  -Overall score:10/10/9/10/10
 
 # Technical Interview Notes:
 
@@ -121,6 +121,10 @@ Timer: 10 mins
 +creates own tests cases beyond what's given
 +announces start to coding; excellent technical communication throughout coding
 +excellent code block organization with pseudocode to ensure he is maintaining his logic and intent
++reviewed his code to ensure he had everything and that the logic matched his intent
++created test cases
++correct result doubled in array and is just off in his slice method - he knew where to look immediately
++timer was up but well on his way to identifying the issue and returning the correct result
 
 +friendly and polite even when he didn't get the correct results for isOdd; was never deterred and confidently moved to debug and revise
 +very calm and maintained his communication at all times; his problem solving skills and ability to think through a challenge/solution are confident but reviews his logic to confirm his intent aligns to the strategy

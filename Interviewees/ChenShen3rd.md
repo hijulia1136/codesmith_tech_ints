@@ -5,7 +5,7 @@ Date and time: July 30 9.30AM
 - PREFERRED COHORT:
 - ONLINE OR IN PERSON:
 - INTERVIEW NUMBER:3rd - PP Style
-  -Overall score:
+  -Overall score:9/10/10/9/9
 
 # Technical Interview Notes:
 

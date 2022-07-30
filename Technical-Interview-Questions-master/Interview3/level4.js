@@ -111,7 +111,10 @@ const bestProfit = (stockPricesYesterday) => {
   let profit = 0;
 
   stockPricesYesterday.forEach((price) => {
+    //if price is < low then low == price else low
     low = price < low ? price : low;
+
+    //if price - low > profit; profit = price - low else profit
     profit = price - low > profit ? price - low : profit;
   });
 

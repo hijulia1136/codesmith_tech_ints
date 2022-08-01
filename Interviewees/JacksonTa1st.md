@@ -1,11 +1,10 @@
-Date and time:
+Date and time: Aug 1 2022 1.30PM
 
 - INTERVIEWEE'S NAME: Jackson Ta
 - INTERVIEWEE'S EMAIL:jacksonkta10@gmail.com
 - PREFERRED COHORT: (PTRI) / FTRI - November; EST is Good;
-- ONLINE OR IN PERSON:
 - INTERVIEW NUMBER:1st
-  -Overall score:
+  -Overall score: 8/9/10/9/10
 
 # Technical Interview Notes:
 
@@ -113,3 +112,7 @@ Timer: 4 mins
 +receives correct results and is relieved and pleased; gives an excellent explanation of why his solution works
 
 +extremely friendly and polite; Good energy throughout; maintained communication at all times and was very considerate and calm; able to laugh at his silly mistakes
++we had a lovely conversation about PTRI vs FTRI and why PTRI worked for me because he is debating
++question about LGBTQ as a follow up since I mentioned my partner; explained his previous work situation as a teacher in a district that banned the display of the pride flag and asked about what type of community codesmith offered. I shared my experiences and what events and support were available
++he asked about the hiring portion and how I saw my progression advancing in order to feel ready to apply for jobs
++++we had a lovely discussion and I thoroughly enjoyed getting to know him. He would be very easy to work with in group or pp and he would certainly be a champion for the community.
